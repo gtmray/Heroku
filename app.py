@@ -6,7 +6,6 @@ import base64
 from tensorflow.keras import models
 import tensorflow as tf
 from PIL import ImageFont, ImageDraw, Image
-import numpy as np
 
 app = Flask(__name__)
 video_stream = VideoCamera()
