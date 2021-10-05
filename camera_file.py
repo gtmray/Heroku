@@ -20,9 +20,9 @@ class VideoCamera(object):
         self.img = np.zeros((200, 400, 3), np.uint8)
         self.color = (36, 255, 12)
         self.model = models.load_model('model.h5')
-        self.b = 0
+        self.b = 100
         self.g = 255
-        self.r = 0
+        self.r = 100
         self.a = 0
         self.fontpath = "ArialUnicodeMS.ttf"
         self.font_nep = ImageFont.truetype(self.fontpath, 32)
