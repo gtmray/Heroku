@@ -2,9 +2,6 @@ from flask import Flask, render_template, Response, jsonify, request
 from camera_file import VideoCamera
 import numpy as np
 import cv2
-import base64
-from tensorflow.keras import models
-import tensorflow as tf
 from PIL import ImageFont, ImageDraw, Image
 
 app = Flask(__name__)
