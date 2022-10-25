@@ -37,7 +37,7 @@ class VideoCamera(object):
         _, img = self.video.read()
 
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        faces = self.face_cascade.detectMultiScale(gray, 1.1, 4, minSize=(30, 30))
+        faces = self.face_cascade.detectMultiScale(gray, 1.2, 4, minSize=(30, 30))
 
         # Draw the rectangle around each face
         for (x, y, w, h) in faces:
